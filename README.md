@@ -1,63 +1,115 @@
-🔐 ORION – SOC Security Case Study
-Security Assessment & Monitoring Design for AIoT-Based Smart Guidance System
+# 🔐 ORION – SOC Security Case Study
 
-📌 Project Background
-ORION was initiated after direct observation at Yayasan Pendidikan Anak Buta (YPAB), located in Gebang Putih, Surabaya.
-The environment is home to approximately 20 visually impaired students and 7 visually impaired teachers who carry out daily educational activities within the same area. During observation and informal discussions, one of the teachers shared that students often stumble, fall, or lose their sense of direction, particularly when navigating open spaces such as the school field.
+**Security Assessment & Monitoring Design for AIoT-Based Smart Guidance System**
+
+---
+
+## 📌 Project Background
+
+ORION was initiated after direct observation at **Yayasan Pendidikan Anak Buta (YPAB)**, located in Gebang Putih, Surabaya.
+
+The environment is home to approximately **20 visually impaired students and 7 visually impaired teachers** who carry out daily educational activities within the same area. During observation and informal discussions, one of the teachers shared that students often **stumble, fall, or lose their sense of direction**, particularly when navigating open spaces such as the school field.
+
 These incidents are not isolated cases, but part of everyday challenges faced by visually impaired students when moving independently.
 
-🧭 Why Existing Solutions Were Not Enough
-Several assistive technologies had been introduced in the past, including smart canes, smart glasses, and smart gloves. However, according to feedback from visually impaired teachers, these solutions were considered expensive, uncomfortable, and impractical.
-More importantly, they felt such devices made users appear mechanical, rather than empowering them as equal individuals. This feedback strongly influenced the design direction of ORION: technology should adapt to users, not redefine them.
+---
 
-🎯 Purpose of ORION
-At its core, ORION aims to support visually impaired individuals in achieving equal independence, particularly in mobility within educational environments.
+## 🧭 Why Existing Solutions Were Not Enough
+
+Several assistive technologies had been introduced in the past, including **smart canes, smart glasses, and smart gloves**. However, according to feedback from visually impaired teachers, these solutions were considered **expensive, uncomfortable, and impractical**.
+
+More importantly, they felt such devices made users appear *mechanical*, rather than empowering them as equal individuals. This feedback strongly influenced the design direction of ORION: technology should adapt to users, not redefine them.
+
+---
+
+## 🎯 Purpose of ORION
+
+At its core, ORION aims to **support visually impaired individuals in achieving equal independence**, particularly in mobility within educational environments.
+
 Without a system like ORION, visually impaired students often require continuous assistance, which can:
-1. Limit independence
-2. Increase the risk of physical accidents
-3. Create ongoing concern for parents, caregivers, and teachers
-4. ORION is designed to reduce these risks while maintaining dignity and autonomy.
 
-🔍 SOC Perspective: Why Security Matters
-From a Security Operations Center (SOC) perspective, ORION presents unique security and privacy challenges.
-Visually impaired users are inherently more vulnerable to certain risks, especially when systems involve live location tracking and personal data. If such data were intercepted or abused, the consequences would go beyond technical failure and could lead to real-world safety threats.
-For users who cannot visually verify their surroundings, malicious tracking or account compromise introduce
-s a serious risk that must be addressed proactively.
+* Limit independence
+* Increase the risk of physical accidents
+* Create ongoing concern for parents, caregivers, and teachers
 
-⚠️ Key Risk Considerations
-The most critical concern identified in this system is location tracking.
+ORION is designed to reduce these risks while maintaining dignity and autonomy.
+
+---
+
+## 🔍 SOC Perspective: Why Security Matters
+
+From a Security Operations Center (SOC) perspective, ORION presents **unique security and privacy challenges**.
+
+Visually impaired users are inherently more vulnerable to certain risks, especially when systems involve **live location tracking and personal data**. If such data were intercepted or abused, the consequences would go beyond technical failure and could lead to **real-world safety threats**.
+
+For users who cannot visually verify their surroundings, malicious tracking or account compromise introduces a serious risk that must be addressed proactively.
+
+---
+
+## ⚠️ Key Risk Considerations
+
+The most critical concern identified in this system is **location tracking**.
+
 While tracking is intended to provide safety and reassurance, continuous or unauthorized monitoring could become dangerous if misused. Improper access to live location data may expose users to stalking, targeting, or other forms of harm.
+
 Additionally, user accounts must be protected to prevent unauthorized access, impersonation, or manipulation of navigation guidance.
 
-🧪 Project Assumptions & Limitations
-This security case study was conducted during the MVP stage, where features are still being developed incrementally.
+---
+
+## 🧪 Project Assumptions & Limitations
+
+This security case study was conducted during the **MVP stage**, where features are still being developed incrementally.
+
 Several assumptions were made during analysis:
-1. The school environment is relatively stable
-2. Beacon placement follows planned design
-3. Usage is limited to authorized contexts
+
+* The school environment is relatively stable
+* Beacon placement follows planned design
+* Usage is limited to authorized contexts
+
 These assumptions are acknowledged as potential limitations and are documented transparently as part of the security assessment.
 
-🛡️ Scope of This SOC Case Study
+---
+
+## 🛡️ Scope of This SOC Case Study
+
 This repository focuses on:
-1. Identifying critical assets and sensitive data
-2. Analyzing realistic threat scenarios, especially related to tracking and navigation
-3. Designing basic detection and monitoring strategies
-4. Simulating potential security incidents before production deployment
-5. The emphasis is on security-by-design, rather than post-incident reaction.
 
-🧠 Personal SOC Reflection
+* Identifying critical assets and sensitive data
+* Analyzing realistic threat scenarios, especially related to tracking and navigation
+* Designing basic detection and monitoring strategies
+* Simulating potential security incidents before production deployment
+
+The emphasis is on **security-by-design**, rather than post-incident reaction.
+
+---
+
+## 🧠 Personal SOC Reflection
+
 This project reinforced an important realization:
-1. social impact and security cannot be separated.
-2. Providing assistive technology without proper security may unintentionally create new risks. For visually impaired users, privacy and safety are not abstract concepts—they directly affect daily life.
-3. This case study reflects a mindset of not only designing what works today, but also thinking ahead about what could go wrong tomorrow.
+**social impact and security cannot be separated**.
 
-🚀 Project Status & Next Steps
-ORION is currently in the MVP phase, with features being developed step by step.
+Providing assistive technology without proper security may unintentionally create new risks. For visually impaired users, privacy and safety are not abstract concepts—they directly affect daily life.
+
+This case study reflects a mindset of not only designing what works today, but also thinking ahead about **what could go wrong tomorrow**.
+
+---
+
+## 🚀 Project Status & Next Steps
+
+ORION is currently in the **MVP phase**, with features being developed step by step.
+
 Future security priorities include:
-Strengthening protection of user data
-Ensuring safe handling of location information
-Improving monitoring and incident readiness
-The ultimate goal is simple: all user data must remain secure, without compromising accessibility or trust.
 
-📬 Author Note
-This project represents a SOC-oriented approach to assistive technology, combining risk awareness, ethical consideration, and proactive security thinking in a real-world social context.
+* Strengthening protection of user data
+* Ensuring safe handling of location information
+* Improving monitoring and incident readiness
+
+The ultimate goal is simple: **all user data must remain secure**, without compromising accessibility or trust.
+
+---
+
+## 📬 Author Note
+
+This project represents a SOC-oriented approach to assistive technology, combining **risk awareness, ethical consideration, and proactive security thinking** in a real-world social context.
+
+
